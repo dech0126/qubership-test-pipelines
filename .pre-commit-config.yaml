@@ -24,6 +24,11 @@ repos:
       - id: shellcheck
         args: [-s, bash] # sourced scripts have no shebang
 
+  - repo: https://github.com/google/yamlfmt
+    rev: v0.21.0
+    hooks:
+      - id: yamlfmt
+
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.9.6
     hooks:
